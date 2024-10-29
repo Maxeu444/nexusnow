@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "303937407237",
+    "project_id": "nexus-now",
+    "storage_bucket": "nexus-now.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303937407237:android:d71f1d3284f57c6dc2cf6c",
+        "android_client_info": {
+          "package_name": "com.example.nexus_now"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303937407237-hnjfv4tk4gq3d6njlfepj0g9covpnj5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7_lRzubgN1J4gN3Si5YVJ6paVWtlwneI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303937407237-hnjfv4tk4gq3d6njlfepj0g9covpnj5k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "303937407237-otmsus7f5q5nmqm404oepuc0a34a614d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.nexusNow"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
