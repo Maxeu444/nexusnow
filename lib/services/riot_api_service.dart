@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class RiotApiService {
-  final String apiKey = 'RGAPI-8e8e0a5b-0df3-4afa-bf19-8c5f70b4b5c4';
+  final String apiKey = 'RGAPI-332362ff-0f8f-4fc8-b247-772adf88a2c4';
   final String region = 'europe';
 
   Future<Map<String, dynamic>> getUserStats(String summonerName, String summonerTag, {int retries = 0}) async {
@@ -17,7 +17,7 @@ class RiotApiService {
       await Future.delayed(Duration(seconds: 1));
       return await getUserStats(summonerName, summonerTag, retries: retries + 1);
     } else if (summonerPuuidResponse.statusCode != 200) {
-      throw Exception('Failed to load summoner with puuid');
+      throw Exception('Failed to load summoner puuid with sum name');
     }
   
     final summonerPuuidData = jsonDecode(summonerPuuidResponse.body);

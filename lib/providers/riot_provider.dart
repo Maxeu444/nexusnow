@@ -22,8 +22,6 @@ class UserStatsNotifier extends StateNotifier<AsyncValue<Map<String, dynamic>>> 
   }
 }
 
-
-
 final userStatsNotifierProvider = StateNotifierProvider<UserStatsNotifier, AsyncValue<Map<String, dynamic>>>((ref) {
   final apiService = ref.watch(riotApiServiceProvider);
   return UserStatsNotifier(apiService);

@@ -112,7 +112,7 @@ class _UserStatsWidgetState extends ConsumerState<UserStatsWidget> {
               Text(
                 '${winRate.toStringAsFixed(1)}% winrate',
                 style: TextStyle(
-                  color: winRate >= 50 ? Colors.green : Colors.red,
+                  color: winRate >= 40 ? Colors.green : Colors.red,
                 ),
               ),
               Text(

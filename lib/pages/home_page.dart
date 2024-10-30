@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:nexus_now/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:nexus_now/widgets/user_stats_widget.dart';
+import 'package:nexus_now/widgets/esport_widget.dart';
 
 class HomePage extends StatelessWidget{
   HomePage({Key? key}) : super(key: key);
@@ -42,7 +43,8 @@ class HomePage extends StatelessWidget{
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            UserStatsWidget(summonerName: 'Maxeu444', summonerTag: 'EUW'),
+            UserStatsWidget(summonerName: 'Petite Plume', summonerTag: 'BOTH'),
+            EsportWidget(),
             _signOutButton()
           ],
         ),
