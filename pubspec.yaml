@@ -42,6 +42,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   lol_api: ^0.0.9
   flutter_riverpod: ^2.6.1
+  google_nav_bar: ^5.0.7
 
 dev_dependencies:
   flutter_test:
