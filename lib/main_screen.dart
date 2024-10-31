@@ -33,7 +33,7 @@ class _MainScreenState extends State<MainScreen> {
             color: Colors.white,
             activeColor: Colors.white,
             tabBackgroundGradient: LinearGradient(
-              colors: [Colors.black, const Color.fromARGB(255, 29, 29, 29)!, const Color.fromARGB(255, 44, 44, 44)!],
+              colors: [Colors.black, const Color.fromARGB(255, 29, 29, 29), const Color.fromARGB(255, 44, 44, 44)],
             ),
             gap: 8,
             onTabChange: (index) {

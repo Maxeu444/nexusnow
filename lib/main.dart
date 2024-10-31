@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primaryColor: const Color.fromARGB(255, 17, 17, 17)
         ),
         home: const WidgetTree()
       ,

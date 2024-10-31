@@ -5,8 +5,13 @@ import '../providers/riot_provider.dart';
 class UserStatsWidget extends ConsumerStatefulWidget {
   final String summonerName;
   final String summonerTag;
+  final bool isHomePage;
 
-  UserStatsWidget({required this.summonerName, required this.summonerTag});
+  UserStatsWidget({
+    required this.summonerName,
+    required this.summonerTag,
+    this.isHomePage = false,
+  });
 
   @override
   _UserStatsWidgetState createState() => _UserStatsWidgetState();
@@ -53,48 +58,6 @@ class _UserStatsWidgetState extends ConsumerState<UserStatsWidget> {
               ),
               SizedBox(height: 16),
               
-              // // Section des champions
-              // SingleChildScrollView(
-              //   scrollDirection: Axis.horizontal,
-              //   child: Row(
-              //     children: data['champions'].map<Widget>((champ) {
-              //       return Container(
-              //         margin: EdgeInsets.only(right: 8.0),
-              //         padding: EdgeInsets.all(8.0),
-              //         decoration: BoxDecoration(
-              //           color: Colors.grey[900],
-              //           borderRadius: BorderRadius.circular(8.0),
-              //         ),
-              //         child: Column(
-              //           children: [
-              //             Container(
-              //               width: 40,
-              //               height: 40,
-              //               color: Colors.red, // Placeholder color for champion image
-              //               child: Icon(Icons.person, color: Colors.white), // Placeholder icon
-              //             ),
-              //             SizedBox(height: 4),
-              //             Text(
-              //               champ['name'],
-              //               style: TextStyle(color: Colors.white, fontSize: 12),
-              //             ),
-              //             Text(
-              //               '${champ['wins']}V / ${champ['losses']}D',
-              //               style: TextStyle(
-              //                 color: Colors.green,
-              //                 fontSize: 12,
-              //               ),
-              //             ),
-              //           ],
-              //         ),
-              //       );
-              //     }).toList(),
-              //   ),
-              // ),
-              
-              // SizedBox(height: 16),
-
-              // Section des statistiques classées
               Text(
                 'Ranked',
                 style: TextStyle(
@@ -124,24 +87,23 @@ class _UserStatsWidgetState extends ConsumerState<UserStatsWidget> {
               
               SizedBox(height: 16),
 
-              // Bouton Voir plus
-              Center(
-                child: ElevatedButton(
-                  onPressed: () {
-                    // Action pour voir plus
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey[700],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
+              if (widget.isHomePage) 
+                Center(
+                  child: ElevatedButton(
+                    onPressed: () {
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.grey[700],
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                    ),
+                    child: Text(
+                      'Voir plus',
+                      style: TextStyle(color: Colors.white),
                     ),
                   ),
-                  child: Text(
-                    'Voir plus',
-                    style: TextStyle(color: Colors.white),
-                  ),
                 ),
-              ),
             ],
           ),
         );

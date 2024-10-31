@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class RiotApiService {
-  final String apiKey = 'RGAPI-332362ff-0f8f-4fc8-b247-772adf88a2c4';
+  final String apiKey = 'RGAPI-8acb25bf-4981-4251-9a20-01b8594028d8';
   final String region = 'europe';
 
   Future<Map<String, dynamic>> getUserStats(String summonerName, String summonerTag, {int retries = 0}) async {
